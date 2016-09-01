@@ -29,22 +29,23 @@ class ViewController: UIViewController {
         
     }
     func passwordCombo(username:String, password: Int) ->String {
-        let username = "Jerry"; "Elaine"; "Michael"
         if password % 3 == 0 {
-            return "Access Denied"
-        }else{
             return "Welcome"
+        }else if username == "Jerry" {
+            return "Welcome"
+        }else if username == "Elaine"{
+            return "Welcome"
+        }else if username == "Michael"{
+            return "Welcome"
+        }else{
+            return "Access Denied"
+        }
+    
     }
-
-
-}
-}
-
 func numberGenerator(a:String, b:Float)->Float{
     let num  = Float(a)
     if (num >= 1.0 && num <= 5.0) && ((b >= 10.5 && b <= 15.0) || (b >= 20.0 && b <= 30.5)) {
-        return
-            num! * b
+        return num! * b
     }else{
         return 0.0
         
@@ -52,4 +53,4 @@ func numberGenerator(a:String, b:Float)->Float{
 }
 
 
-
+}
